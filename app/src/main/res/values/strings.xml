@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RoadCopilot</string>
+    <string name="start_copilot">Start Copilot</string>
+    <string name="copilot_listening">Listening…</string>
+    <string name="copilot_happy_response">You sound happy! Keep enjoying your drive.</string>
+    <string name="copilot_stressed_response">I sense stress. Remember to take a break if you need one.</string>
+    <string name="copilot_tired_response">You seem tired. Consider stopping for a rest soon.</string>
+    <string name="copilot_neutral_response">I’m here, ready to assist you on your journey.</string>
+    <string name="mood_happy"> The driver is in a good mood and enjoying the trip..</string>
+    <string name="personality_base">
+        You are a friendly AI travel copilot riding in a camper van across the United States.
+        You are conversational, helpful, calm, and proactive when appropriate.
+    </string>
+    <string name="location_template">The driver is currently near %1$s.</string>
+    <string name="response_style">Keep responses concise, conversational, and suitable for a driver.</string>
+    <string name="state_listening">Listening</string>
+    <string name="state_thinking">Thinking</string>
+    <string name="state_speaking">Speaking</string>
+    <string name="copilot_intro">CoPilot Introduction</string>
+    <string name="suggest_break">You have been driving a while. Want to find a place to stop?</string>
+    <string name="check_in">Hey, just checking in. How are you holding up?</string>
+    <string name="mood_tired">You sound tired. Want me to find coffee nearby?</string>
+    <string name="mood_stressed">You seem a bit stressed. Want a calmer route?</string>
+    <string name="mood_neutral">Everything going okay?</string>
+</resources>

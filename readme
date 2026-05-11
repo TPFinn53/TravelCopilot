@@ -1,0 +1,305 @@
+# TravelCopilot
+## AI Road Trip Companion for Android
+
+TravelCopilot is an offline-first, voice-first AI road trip companion designed for long-distance travel, van life, road navigation, and contextual travel assistance.
+
+The application combines:
+
+- conversational AI,
+- trip lifecycle management,
+- contextual awareness,
+- persistent memory,
+- voice interaction,
+- and intelligent travel logging
+
+into a unified Android travel companion platform.
+
+---
+
+# Project Vision
+
+TravelCopilot is designed to evolve beyond a traditional AI chat application into:
+
+```text
+AI Chat App
+    →
+Contextual Road Assistant
+    →
+Persistent Travel Companion
+    →
+Vehicle Operating Companion
+
+The system prioritizes:
+
+offline reliability,
+long-running stability,
+driving-safe interaction,
+local data ownership,
+and modular AI orchestration.
+Core Features
+Current Capabilities
+Offline-first persistence
+AI conversational interface
+Voice interaction pipeline
+Trip lifecycle management
+Event timeline architecture
+ContextSnapshot aggregation system
+Background assistant orchestration
+Room-based persistent storage
+Compose-based reactive UI
+Hilt dependency injection
+Context-aware assistant foundation
+Planned Features
+Proactive AI suggestions
+Wake-word support
+Continuous listening
+Route replay
+Smart stop detection
+AI-generated travel journals
+Driving fatigue awareness
+Offline maps support
+Route analytics
+Cloud backup (optional)
+Architecture Summary
+
+TravelCopilot uses a modular Android architecture optimized for reliability and long-term maintainability.
+
+Core Stack
+Category	Technology
+Language	Kotlin
+UI	Jetpack Compose
+Architecture	MVVM
+Persistence	Room Database
+DI	Hilt
+Async	Coroutines + Flow
+Mapping	Google Maps Compose
+Voice	Android Speech APIs
+Storage	DataStore
+Architectural Principles
+Offline-first
+Voice-first
+Context-aware
+Reactive state management
+Repository pattern
+Deterministic state machines
+Modular service-oriented design
+High-Level Architecture
+Compose UI
+    ↓
+ViewModels
+    ↓
+Core Engine Layer
+    ↓
+Repositories
+    ↓
+Room Database + DataStore
+    ↓
+Android Platform Services
+Screenshots
+
+Placeholder screenshots — replace with actual screenshots later.
+
+Chat Interface
+/docs/screenshots/chat_screen.png
+Trip Timeline
+/docs/screenshots/trip_timeline.png
+Driving Mode
+/docs/screenshots/driving_mode.png
+Trip Map View
+/docs/screenshots/trip_map.png
+Project Structure
+TravelCopilot/
+│
+├── app/
+├── docs/
+├── gradle/
+├── schemas/
+│
+├── build.gradle.kts
+├── settings.gradle.kts
+├── README.md
+└── LICENSE
+Documentation
+Core Documentation
+Document	Purpose
+SOFTWARE_SPECIFICATION.md	Full system specification
+IMPLEMENTATION_ROADMAP.md	Feature roadmap and priorities
+ARCHITECTURE_DECISIONS.md	Locked architectural decisions
+DATABASE_SCHEMA.md	Persistence layer reference
+STATE_MACHINE.md	Behavioral orchestration reference
+Documentation Location
+/docs/
+Build Instructions
+Requirements
+Software
+Android Studio Hedgehog or newer
+JDK 17
+Android SDK 35
+Gradle 8+
+Clone Repository
+git clone https://github.com/yourusername/TravelCopilot.git
+cd TravelCopilot
+Configure Local Secrets
+
+Create:
+
+local.properties
+
+Add:
+
+MAPS_API_KEY=YOUR_KEY
+OPENAI_API_KEY=YOUR_KEY
+
+Do NOT commit this file.
+
+Build Debug APK
+./gradlew assembleDebug
+Run Unit Tests
+./gradlew test
+Install to Device
+./gradlew installDebug
+Permissions Required
+
+TravelCopilot requires the following Android permissions.
+
+Permission	Purpose
+RECORD_AUDIO	Voice interaction
+ACCESS_FINE_LOCATION	GPS tracking
+ACCESS_COARSE_LOCATION	General location
+FOREGROUND_SERVICE	Background assistant service
+POST_NOTIFICATIONS	Foreground service notifications
+INTERNET	AI provider access
+WAKE_LOCK	Long-running assistant operation
+State Machine Architecture
+
+TravelCopilot uses deterministic state machines for:
+
+trip lifecycle,
+voice interaction,
+assistant orchestration,
+service lifecycle,
+and recovery behavior.
+
+See:
+
+docs/STATE_MACHINE.md
+Database Architecture
+
+The application uses Room as the authoritative persistence layer.
+
+Core persistence domains include:
+
+trips,
+events,
+conversations,
+memory,
+route history,
+and summaries.
+
+See:
+
+docs/DATABASE_SCHEMA.md
+Roadmap
+
+Implementation roadmap:
+
+docs/IMPLEMENTATION_ROADMAP.md
+
+Major roadmap phases include:
+
+Foundation hardening
+Core feature completion
+AI intelligence expansion
+Voice and driving UX
+Mapping and navigation
+Analytics and insights
+Sync and multi-device support
+Reliability optimization
+Architecture Decisions
+
+Locked architectural decisions are documented in:
+
+docs/ARCHITECTURE_DECISIONS.md
+
+Key decisions include:
+
+Offline-first architecture
+Room as source of truth
+One active trip maximum
+Voice-first interaction
+Compose-only UI
+Background service orchestration
+Testing Strategy
+Unit Tests
+
+Focus areas:
+
+state machines,
+repositories,
+reducers,
+prompt builders,
+analytics.
+Integration Tests
+
+Focus areas:
+
+Room persistence,
+recovery logic,
+service lifecycle,
+voice interaction.
+Future Simulation Testing
+
+Planned:
+
+fake GPS replay,
+simulated trips,
+long-running service tests,
+voice injection testing.
+Privacy Philosophy
+
+TravelCopilot prioritizes:
+
+local ownership of data,
+offline operation,
+minimal external dependencies,
+and transparent persistence.
+
+Cloud synchronization is optional and not foundational.
+
+GitHub Recommendations
+Recommended Branches
+main
+develop
+feature/*
+Recommended Labels
+architecture
+bug
+voice
+maps
+database
+performance
+ux
+ai
+Current Project Status
+Current Phase
+
+Architecture Lock and Feature Finalization
+
+The project has transitioned from exploratory prototyping into:
+
+reliability hardening,
+feature completion,
+UX refinement,
+and contextual intelligence expansion.
+License
+
+Add your preferred license here.
+
+Example:
+
+MIT License
+Final Product Definition
+
+TravelCopilot is an offline-first, voice-first, context-aware AI travel companion
+for Android designed to provide persistent conversational assistance during road
+travel and vehicle-based living.
